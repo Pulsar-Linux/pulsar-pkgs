@@ -43,6 +43,20 @@ jobs:
         cd repo
         repo-add antergos-pkgs.db.tar.gz *.pkg.tar.zst
 
+    - name: Generate package list
+      run: |
+        python3 -c "
+import json, os, glob
+pkgs = []
+for f in glob.glob('/tmp/pkgout/*.pkg.tar.zst'):
+    name = os.path.basename(f)
+    size = os.path.getsize(f)
+    pkgs.append({'name': name, 'size': size})
+with open('repo/pkglist.json', 'w') as fp:
+    json.dump(pkgs, fp, indent=2)
+    fp.write('\n')
+"
+
     - name: Deploy to Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
