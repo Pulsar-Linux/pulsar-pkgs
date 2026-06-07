@@ -40,22 +40,14 @@ jobs:
       run: |
         mkdir -p repo
         cp /tmp/pkgout/*.pkg.tar.zst repo/
+
+    - name: Generate repo database
+      run: |
         cd repo
         repo-add antergos-pkgs.db.tar.gz *.pkg.tar.zst
 
-    - name: Generate package list
-      run: |
-        python -c "
-        import json, os, glob
-        pkgs = []
-        for f in glob.glob('/tmp/pkgout/*.pkg.tar.zst'):
-            name = os.path.basename(f)
-            size = os.path.getsize(f)
-            pkgs.append({'name': name, 'size': size})
-        with open('repo/pkglist.json', 'w') as fp:
-            json.dump(pkgs, fp, indent=2)
-            fp.write('\n')
-        "
+    - name: Generate index and package list
+      run: python generate-index.py
 
     - name: Deploy to Pages
       uses: peaceiris/actions-gh-pages@v3
