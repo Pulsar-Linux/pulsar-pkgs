@@ -2,7 +2,7 @@
 # Contributor: Antergos Team
 
 pkgname=cnchi
-pkgver=0.16.51
+pkgver=0.16.52
 pkgrel=1
 pkgdesc="Antergos NeXT graphical installer"
 arch=('any')
