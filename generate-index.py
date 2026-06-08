@@ -47,6 +47,7 @@ html = f'''<!DOCTYPE html>
     <strong>Add to /etc/pacman.conf</strong>
     <pre>[antergos-pkgs]
 SigLevel = Optional TrustAll
+Server = https://Antergos-NeXT.github.io/antergos-pkgs/$repo/os/$arch
 Server = https://Antergos-NeXT.github.io/antergos-pkgs</pre>
   </div>
 

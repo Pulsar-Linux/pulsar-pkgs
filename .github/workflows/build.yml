@@ -38,13 +38,18 @@ jobs:
 
     - name: Set up repo
       run: |
-        mkdir -p repo
-        cp /tmp/pkgout/*.pkg.tar.zst repo/
+        mkdir -p repo/antergos-pkgs/os/x86_64
+        cp /tmp/pkgout/*.pkg.tar.zst repo/antergos-pkgs/os/x86_64/
 
     - name: Generate repo database
       run: |
-        cd repo
+        cd repo/antergos-pkgs/os/x86_64
         repo-add antergos-pkgs.db.tar.gz *.pkg.tar.zst
+
+    - name: Copy to root for flat-URL compat
+      run: |
+        cp repo/antergos-pkgs/os/x86_64/*.pkg.tar.zst repo/
+        cp repo/antergos-pkgs/os/x86_64/antergos-pkgs.db* repo/
 
     - name: Generate index and package list
       run: python generate-index.py
