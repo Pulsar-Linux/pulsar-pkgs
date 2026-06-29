@@ -1,31 +1,31 @@
 [
   {
     "name": "cnchi-0.17.0-1-any.pkg.tar.zst",
-    "size": 6169898
+    "size": 6169733
   },
   {
     "name": "downgrade-12.0.2-1-any.pkg.tar.zst",
-    "size": 30930
+    "size": 30910
   },
   {
     "name": "pulsar-base-1-1-any.pkg.tar.zst",
-    "size": 4755
+    "size": 4761
   },
   {
     "name": "pulsar-budgie-1-1-any.pkg.tar.zst",
-    "size": 4806
+    "size": 4811
   },
   {
     "name": "pulsar-cinnamon-1-1-any.pkg.tar.zst",
-    "size": 4820
+    "size": 4831
   },
   {
     "name": "pulsar-common-1-1-any.pkg.tar.zst",
-    "size": 4920
+    "size": 4926
   },
   {
     "name": "pulsar-deepin-1-1-any.pkg.tar.zst",
-    "size": 5165
+    "size": 5185
   },
   {
     "name": "pulsar-desktop-settings-1-2-any.pkg.tar.zst",
@@ -33,50 +33,50 @@
   },
   {
     "name": "pulsar-enlightenment-1-1-any.pkg.tar.zst",
-    "size": 4741
+    "size": 4744
   },
   {
     "name": "pulsar-gnome-1-1-any.pkg.tar.zst",
-    "size": 5101
+    "size": 5090
   },
   {
     "name": "pulsar-graphic-1-1-any.pkg.tar.zst",
-    "size": 5188
+    "size": 5186
   },
   {
     "name": "pulsar-i3-1-1-any.pkg.tar.zst",
-    "size": 4771
+    "size": 4774
   },
   {
     "name": "pulsar-kde-1-1-any.pkg.tar.zst",
-    "size": 5223
+    "size": 5234
   },
   {
     "name": "pulsar-keyring-1-1-any.pkg.tar.zst",
-    "size": 4524
+    "size": 4525
   },
   {
     "name": "pulsar-lxqt-1-1-any.pkg.tar.zst",
-    "size": 4899
+    "size": 4907
   },
   {
     "name": "pulsar-mate-1-1-any.pkg.tar.zst",
-    "size": 4992
+    "size": 4995
   },
   {
     "name": "pulsar-mirrorlist-1-1-any.pkg.tar.zst",
-    "size": 2920
+    "size": 2931
   },
   {
     "name": "pulsar-openbox-1-1-any.pkg.tar.zst",
-    "size": 4756
+    "size": 4775
   },
   {
     "name": "pulsar-xfce-1-1-any.pkg.tar.zst",
-    "size": 5046
+    "size": 5035
   },
   {
     "name": "yay-13.0.1-1-x86_64.pkg.tar.zst",
-    "size": 4685699
+    "size": 4684298
   }
 ]
